@@ -3,7 +3,7 @@ if (!PROXY_HOSTNAME) {
   throw new Error("PROXY_HOSTNAME env variable is not set");
 }
 
-export const PROXY_REDIRECT_URL = `${PROXY_HOSTNAME}/redirect`;
+export const PROXY_REDIRECT_URL = `${PROXY_HOSTNAME}`;
 
 export const TOKEN_URL = process.env.TOKEN_URL as string;
 if (!TOKEN_URL) {
